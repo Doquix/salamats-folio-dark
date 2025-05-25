@@ -1,22 +1,25 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
+import ThreeJsBackground from './ThreeJsBackground';
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative section-padding">
-      <div className="container-width text-center">
-        <div className="animate-fade-in">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+      <ThreeJsBackground />
+      
+      <div className="container-width text-center relative z-10">
+        <div>
+          <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-portfolio-text">Luke Akaiza Y.</span>
             <span className="block gradient-text">Salamat</span>
           </h1>
           
-          <p className="text-xl sm:text-2xl text-portfolio-text-muted mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="hero-subtitle text-xl sm:text-2xl text-portfolio-text-muted mb-8 max-w-3xl mx-auto leading-relaxed">
             Web Developer & IT Student crafting modern digital experiences from the Philippines
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a 
               href="#about"
               className="bg-portfolio-accent hover:bg-portfolio-accent-light text-portfolio-dark px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-portfolio-accent/30"
