@@ -25,7 +25,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-animate py-20 section-padding">
+    <section id="about" className="py-20 section-padding">
       <div className="container-width">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -42,6 +42,7 @@ const About = () => {
             <div 
               key={index}
               className="bg-portfolio-dark-light border border-portfolio-dark-lighter rounded-xl p-6 card-hover"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-center mb-4">
                 <div className="bg-portfolio-accent/10 p-3 rounded-lg mr-4">
