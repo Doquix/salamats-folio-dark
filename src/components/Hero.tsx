@@ -1,12 +1,19 @@
-
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, User } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative section-padding">
       <div className="container-width text-center">
         <div className="animate-fade-in">
+          {/* Profile Picture */}
+          <div className="mb-8 flex justify-center">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full border-4 border-portfolio-accent bg-portfolio-dark-light dark:bg-portfolio-dark-lighter flex items-center justify-center overflow-hidden">
+              {/* Placeholder for now - user can replace with actual image */}
+              <User className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-portfolio-accent" />
+            </div>
+          </div>
+
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-gray-900 dark:text-portfolio-text">Luke Akaiza Y.</span>
             <span className="block gradient-text">Salamat</span>
