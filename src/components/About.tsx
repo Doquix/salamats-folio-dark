@@ -28,10 +28,10 @@ const About = () => {
     <section id="about" className="py-20 section-padding">
       <div className="container-width">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-900 dark:text-portfolio-text">
             About <span className="gradient-text">Me</span>
           </h2>
-          <p className="text-xl text-portfolio-text-muted max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-portfolio-text-muted max-w-3xl mx-auto leading-relaxed">
             A passionate web developer from the Philippines, dedicated to creating innovative digital solutions 
             and continuously learning new technologies to build better user experiences.
           </p>
@@ -41,7 +41,7 @@ const About = () => {
           {experiences.map((experience, index) => (
             <div 
               key={index}
-              className="bg-portfolio-dark-light border border-portfolio-dark-lighter rounded-xl p-6 card-hover"
+              className="bg-gray-50 dark:bg-portfolio-dark-light border border-gray-200 dark:border-portfolio-dark-lighter rounded-xl p-6 card-hover"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-center mb-4">
@@ -51,7 +51,7 @@ const About = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-portfolio-text">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-portfolio-text">
                     {experience.title}
                   </h3>
                   <p className="text-portfolio-accent text-sm">
@@ -59,7 +59,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-portfolio-text-muted leading-relaxed">
+              <p className="text-gray-600 dark:text-portfolio-text-muted leading-relaxed">
                 {experience.description}
               </p>
             </div>
