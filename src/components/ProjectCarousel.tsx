@@ -2,7 +2,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,7 +16,6 @@ const ProjectCarousel = () => {
       description: "Front-end development of a comprehensive website for the Service Learning Program Office using the LAMP stack. Features responsive design and user-friendly interface for program information and resources.",
       technologies: ["Laravel", "MySQL", "Apache", "PHP", "Bootstrap"],
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
-      link: "#",
       github: "#"
     },
     {
@@ -24,7 +23,6 @@ const ProjectCarousel = () => {
       description: "Full-stack web application built with Laravel and Bootstrap for health services office inventory management. Integrated with PostgreSQL database and deployed using Docker containers.",
       technologies: ["Laravel", "Bootstrap", "PostgreSQL", "Docker"],
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop",
-      link: "#",
       github: "#"
     },
     {
@@ -32,7 +30,6 @@ const ProjectCarousel = () => {
       description: "RESTful API service built with Flask framework for artwork management and gallery functionality. Utilizes MySQL database for efficient data storage and retrieval.",
       technologies: ["Flask", "Python", "MySQL", "REST API"],
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
-      link: "#",
       github: "#"
     },
     {
@@ -40,7 +37,6 @@ const ProjectCarousel = () => {
       description: "Online booking system developed with Flask and MongoDB for efficient appointment and reservation management. Features real-time availability and user-friendly booking interface.",
       technologies: ["Flask", "MongoDB", "Python", "JavaScript"],
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
-      link: "#",
       github: "#"
     }
   ];
@@ -111,20 +107,13 @@ const ProjectCarousel = () => {
                       ))}
                     </div>
                     
-                    <div className="flex gap-4">
-                      <a 
-                        href={project.link}
-                        className="flex items-center gap-2 bg-portfolio-accent hover:bg-portfolio-accent-light text-portfolio-dark px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        View Project
-                      </a>
+                    <div className="flex justify-center">
                       <a 
                         href={project.github}
-                        className="flex items-center gap-2 border border-portfolio-accent text-portfolio-accent hover:bg-portfolio-accent hover:text-portfolio-dark px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105"
+                        className="flex items-center gap-2 bg-portfolio-accent hover:bg-portfolio-accent-light text-portfolio-dark px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105"
                       >
                         <Github className="w-4 h-4" />
-                        Code
+                        View Code
                       </a>
                     </div>
                   </div>
