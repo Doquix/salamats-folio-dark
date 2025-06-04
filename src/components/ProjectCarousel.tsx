@@ -13,10 +13,10 @@ const ProjectCarousel = () => {
   const projects = [
     {
       title: "XU SLP Website",
-      description: "Front-end development of a comprehensive website for the Service Learning Program Office using the LAMP stack. Features responsive design and user-friendly interface for program information and resources.",
+      description: "Front-end developer of a comprehensive website for the Service Learning Program Office using the LAMP stack. Features responsive design and user-friendly interface for program information and resources.",
       technologies: ["Laravel", "MySQL", "Apache", "PHP", "Bootstrap"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
-      github: "#"
+      image: "/images/xuslp.png",
+      github: "https://github.com/VinniAgawinUba/SLP"
     },
     {
       title: "XUHSO Inventory Management System",
