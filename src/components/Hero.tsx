@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative section-padding overflow-hidden">
       {/* Space background with stars */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-950">
-        {/* Animated stars */}
+        {/* Moving animated stars */}
         <div className="absolute inset-0">
           {[...Array(50)].map((_, i) => (
             <div
@@ -17,22 +17,38 @@ const Hero = () => {
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
                 animationDelay: `${Math.random() * 3}s`,
-                animationDuration: `${2 + Math.random() * 2}s`
+                animationDuration: `${2 + Math.random() * 2}s`,
+                animation: `twinkle ${2 + Math.random() * 3}s infinite ${Math.random() * 2}s, float ${10 + Math.random() * 10}s infinite linear ${Math.random() * 5}s`
               }}
             />
           ))}
         </div>
         
-        {/* Larger glowing stars */}
+        {/* Larger glowing moving stars */}
         <div className="absolute inset-0">
           {[...Array(20)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-2 h-2 bg-blue-300 rounded-full animate-glow"
+              className="absolute w-2 h-2 bg-blue-300 rounded-full"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 4}s`
+                animation: `glow ${3 + Math.random() * 2}s infinite ${Math.random() * 2}s, drift ${15 + Math.random() * 10}s infinite linear ${Math.random() * 5}s`
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Shooting stars */}
+        <div className="absolute inset-0">
+          {[...Array(3)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-white rounded-full"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animation: `shoot ${5 + Math.random() * 3}s infinite ${Math.random() * 8}s`
               }}
             />
           ))}
