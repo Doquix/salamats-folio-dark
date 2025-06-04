@@ -13,17 +13,46 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-950 text-slate-100 transition-colors duration-300 relative overflow-x-hidden">
       {/* Background space elements */}
       <div className="fixed inset-0 pointer-events-none">
-        {/* Moving stars animation */}
+        {/* Moving animated stars */}
         <div className="absolute inset-0">
-          {[...Array(30)].map((_, i) => (
+          {[...Array(40)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-0.5 h-0.5 bg-white/60 rounded-full animate-pulse"
+              className="absolute w-0.5 h-0.5 bg-white/60 rounded-full"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 3}s`
+                animation: `twinkle ${2 + Math.random() * 3}s infinite ${Math.random() * 2}s, float ${12 + Math.random() * 8}s infinite linear ${Math.random() * 5}s`
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Larger glowing moving stars */}
+        <div className="absolute inset-0">
+          {[...Array(15)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-blue-300/70 rounded-full"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animation: `glow ${3 + Math.random() * 2}s infinite ${Math.random() * 2}s, drift ${18 + Math.random() * 12}s infinite linear ${Math.random() * 5}s`
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Shooting stars */}
+        <div className="absolute inset-0">
+          {[...Array(2)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-0.5 h-0.5 bg-white rounded-full"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animation: `shoot ${6 + Math.random() * 4}s infinite ${Math.random() * 10}s`
               }}
             />
           ))}
