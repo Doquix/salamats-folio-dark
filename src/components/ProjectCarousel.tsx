@@ -15,29 +15,25 @@ const ProjectCarousel = () => {
       title: "XU SLP Website",
       description: "Front-end developer of a comprehensive website for the Service Learning Program Office using the LAMP stack. Features responsive design and user-friendly interface for program information and resources.",
       technologies: ["Laravel", "MySQL", "Apache", "PHP", "Bootstrap"],
-      image: "/images/xuslp.png",
-      github: "https://github.com/VinniAgawinUba/SLP"
+      
     },
     {
       title: "XUHSO Inventory Management System",
       description: "Full-stack web application built with Laravel and Bootstrap for health services office inventory management. Integrated with PostgreSQL database and deployed using Docker containers.",
       technologies: ["Laravel", "Bootstrap", "PostgreSQL", "Docker"],
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop",
-      github: "#"
+      
     },
     {
       title: "Artwork Webservice",
       description: "RESTful API service built with Flask framework for artwork management and gallery functionality. Utilizes MySQL database for efficient data storage and retrieval.",
       technologies: ["Flask", "Python", "MySQL", "REST API"],
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
-      github: "#"
+  
     },
     {
       title: "Booking Management System",
       description: "Online booking system developed with Flask and MongoDB for efficient appointment and reservation management. Features real-time availability and user-friendly booking interface.",
       technologies: ["Flask", "MongoDB", "Python", "JavaScript"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
-      github: "#"
+     
     }
   ];
 
@@ -84,8 +80,6 @@ const ProjectCarousel = () => {
                 <div className="bg-portfolio-dark-light border border-portfolio-dark-lighter rounded-xl overflow-hidden card-hover h-full">
                   <div className="aspect-video overflow-hidden">
                     <img 
-                      src={project.image} 
-                      alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                     />
                   </div>
@@ -107,15 +101,8 @@ const ProjectCarousel = () => {
                       ))}
                     </div>
                     
-                    <div className="flex justify-center">
-                      <a 
-                        href={project.github}
-                        className="flex items-center gap-2 bg-portfolio-accent hover:bg-portfolio-accent-light text-portfolio-dark px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105"
-                      >
-                        <Github className="w-4 h-4" />
-                        View Code
-                      </a>
-                    </div>
+                    
+                  
                   </div>
                 </div>
               </SwiperSlide>
