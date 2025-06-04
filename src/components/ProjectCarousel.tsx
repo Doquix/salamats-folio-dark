@@ -78,11 +78,6 @@ const ProjectCarousel = () => {
             {projects.map((project, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-portfolio-dark-light border border-portfolio-dark-lighter rounded-xl overflow-hidden card-hover h-full">
-                  <div className="aspect-video overflow-hidden">
-                    <img 
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                    />
-                  </div>
                   
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-portfolio-text mb-3">
