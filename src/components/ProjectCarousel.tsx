@@ -88,7 +88,7 @@ const ProjectCarousel = () => {
                       {project.description}
                     </p>
                     
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-2 mb-3">
                       {project.technologies.map((tech, techIndex) => (
                         <span key={techIndex} className="skill-tag text-xs">
                           {tech}
