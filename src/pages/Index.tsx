@@ -22,7 +22,7 @@ const Index = () => {
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animation: `twinkle ${2 + Math.random() * 3}s infinite ${Math.random() * 2}s, float ${12 + Math.random() * 8}s infinite linear ${Math.random() * 5}s`
+                animation: `twinkle ${0.5 + Math.random() * 1}s infinite ${Math.random() * 1}s, float ${2 + Math.random() * 2}s infinite linear ${Math.random() * 1}s`
               }}
             />
           ))}
@@ -37,7 +37,7 @@ const Index = () => {
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animation: `glow ${3 + Math.random() * 2}s infinite ${Math.random() * 2}s, drift ${18 + Math.random() * 12}s infinite linear ${Math.random() * 5}s`
+                animation: `glow ${1 + Math.random() * 1}s infinite ${Math.random() * 1}s, drift ${3 + Math.random() * 2}s infinite linear ${Math.random() * 1}s`
               }}
             />
           ))}
@@ -52,7 +52,7 @@ const Index = () => {
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animation: `shoot ${6 + Math.random() * 4}s infinite ${Math.random() * 10}s`
+                animation: `shoot ${1 + Math.random() * 1}s infinite ${Math.random() * 2}s`
               }}
             />
           ))}

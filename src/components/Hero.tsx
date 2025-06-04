@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronDown, User } from 'lucide-react';
 
@@ -16,9 +15,9 @@ const Hero = () => {
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 3}s`,
-                animationDuration: `${2 + Math.random() * 2}s`,
-                animation: `twinkle ${2 + Math.random() * 3}s infinite ${Math.random() * 2}s, float ${10 + Math.random() * 10}s infinite linear ${Math.random() * 5}s`
+                animationDelay: `${Math.random() * 1}s`,
+                animationDuration: `${0.5 + Math.random() * 1}s`,
+                animation: `twinkle ${0.5 + Math.random() * 1}s infinite ${Math.random() * 1}s, float ${2 + Math.random() * 2}s infinite linear ${Math.random() * 1}s`
               }}
             />
           ))}
@@ -33,7 +32,7 @@ const Hero = () => {
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animation: `glow ${3 + Math.random() * 2}s infinite ${Math.random() * 2}s, drift ${15 + Math.random() * 10}s infinite linear ${Math.random() * 5}s`
+                animation: `glow ${1 + Math.random() * 1}s infinite ${Math.random() * 1}s, drift ${3 + Math.random() * 2}s infinite linear ${Math.random() * 1}s`
               }}
             />
           ))}
@@ -48,7 +47,7 @@ const Hero = () => {
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animation: `shoot ${5 + Math.random() * 3}s infinite ${Math.random() * 8}s`
+                animation: `shoot ${1 + Math.random() * 1}s infinite ${Math.random() * 2}s`
               }}
             />
           ))}
