@@ -1,28 +1,38 @@
 
 import React from 'react';
-import { Code, Palette, Database, Brain } from 'lucide-react';
+import { Code, Palette, Database, Brain, Settings, Award } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Web Development",
-      skills: ["Laravel", "Flask", "Bootstrap", "Tailwind CSS", "WordPress", "Shopify"]
+      title: "Languages",
+      skills: ["Python", "PHP", "JavaScript", "SQL"]
     },
     {
-      icon: <Palette className="w-6 h-6" />,
-      title: "Design & Tools",
-      skills: ["Figma", "Canva", "Microsoft Office"]
+      icon: <Settings className="w-6 h-6" />,
+      title: "Frameworks & Libraries",
+      skills: ["Laravel", "Flask", "Vue.js", "Bootstrap", "Tailwind CSS"]
     },
     {
       icon: <Database className="w-6 h-6" />,
-      title: "Databases",
-      skills: ["MySQL", "PostgreSQL", "MongoDB"]
+      title: "Databases & Storage",
+      skills: ["MySQL", "MongoDB", "PostgreSQL"]
+    },
+    {
+      icon: <Palette className="w-6 h-6" />,
+      title: "Development Tools",
+      skills: ["Git", "Docker", "VSCode", "IntelliJ IDEA", "Postman", "phpMyAdmin"]
     },
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "AI Tools",
-      skills: ["ChatGPT", "Claude", "Gemini", "DeepSeek"]
+      title: "Design & Documentation",
+      skills: ["Figma", "Draw.io", "Canva", "Swagger"]
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      title: "Platforms & OS",
+      skills: ["Linux", "Render", "Docker", "WordPress", "Shopify"]
     }
   ];
 
@@ -34,11 +44,12 @@ const Skills = () => {
             Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-xl text-portfolio-text-muted max-w-3xl mx-auto leading-relaxed">
-            A comprehensive toolkit of modern technologies and tools that I use to bring ideas to life.
+            A comprehensive toolkit of modern technologies and professional tools that I use to deliver 
+            robust full-stack solutions and exceptional user experiences.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {skillCategories.map((category, index) => (
             <div 
               key={index}
@@ -66,7 +77,8 @@ const Skills = () => {
 
         <div className="text-center">
           <p className="text-portfolio-text-muted">
-            Always learning and exploring new technologies to stay current with industry trends.
+            Continuously learning and exploring cutting-edge technologies to stay ahead of industry trends 
+            and deliver innovative solutions.
           </p>
         </div>
       </div>

@@ -1,12 +1,13 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Phone } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <Github className="w-5 h-5" />, href: "#", label: "GitHub" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
+    { icon: <Github className="w-5 h-5" />, href: "https://github.com/luke-salamat", label: "GitHub" },
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/luke-salamat", label: "LinkedIn" },
     { icon: <Mail className="w-5 h-5" />, href: "mailto:lukaizas@gmail.com", label: "Email" },
+    { icon: <Phone className="w-5 h-5" />, href: "tel:+639368920872", label: "Phone" },
   ];
 
   return (
@@ -17,8 +18,11 @@ const Footer = () => {
             <h3 className="text-xl font-semibold gradient-text mb-4">
               Luke Akaiza Y. Salamat
             </h3>
+            <p className="text-gray-600 dark:text-portfolio-text-muted mb-2">
+              Full-Stack Web Developer | Laravel & Flask Specialist
+            </p>
             <p className="text-gray-600 dark:text-portfolio-text-muted mb-6">
-              Web Developer | IT Student | Philippines
+              Cagayan de Oro, Philippines
             </p>
             
             <div className="flex justify-center space-x-6">
@@ -26,6 +30,8 @@ const Footer = () => {
                 <a
                   key={index}
                   href={link.href}
+                  target={link.href.startsWith('http') ? '_blank' : '_self'}
+                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
                   aria-label={link.label}
                   className="bg-gray-100 dark:bg-portfolio-dark-light border border-gray-200 dark:border-portfolio-dark-lighter p-3 rounded-lg text-gray-600 dark:text-portfolio-text-muted hover:text-portfolio-accent hover:border-portfolio-accent transition-all duration-300 hover:scale-110"
                 >

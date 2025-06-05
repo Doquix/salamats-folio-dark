@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, MessageSquare, Send } from 'lucide-react';
+import { Mail, MessageSquare, Send, Phone, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -34,7 +34,8 @@ const Contact = () => {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-portfolio-text-muted max-w-3xl mx-auto leading-relaxed">
-            Ready to collaborate on your next project? Let's discuss how we can bring your ideas to life.
+            Ready to collaborate on your next project? Let's discuss how we can bring your ideas to life 
+            with modern web technologies and innovative solutions.
           </p>
         </div>
 
@@ -47,7 +48,8 @@ const Contact = () => {
               </h3>
               <p className="text-gray-600 dark:text-portfolio-text-muted leading-relaxed mb-8">
                 I'm always open to discussing new opportunities, interesting projects, 
-                or potential collaborations. Feel free to reach out!
+                or potential collaborations. Based in Cagayan de Oro, Philippines, 
+                I'm available for both local and remote work.
               </p>
             </div>
 
@@ -58,7 +60,21 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-gray-900 dark:text-portfolio-text font-medium">Email</p>
-                  <p className="text-gray-600 dark:text-portfolio-text-muted">lukaizas@gmail.com</p>
+                  <a href="mailto:lukaizas@gmail.com" className="text-gray-600 dark:text-portfolio-text-muted hover:text-portfolio-accent transition-colors">
+                    lukaizas@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="bg-portfolio-accent/10 p-3 rounded-lg">
+                  <Phone className="w-5 h-5 text-portfolio-accent" />
+                </div>
+                <div>
+                  <p className="text-gray-900 dark:text-portfolio-text font-medium">Phone</p>
+                  <a href="tel:+639368920872" className="text-gray-600 dark:text-portfolio-text-muted hover:text-portfolio-accent transition-colors">
+                    +63 936 892 0872
+                  </a>
                 </div>
               </div>
 
@@ -69,6 +85,28 @@ const Contact = () => {
                 <div>
                   <p className="text-gray-900 dark:text-portfolio-text font-medium">Response Time</p>
                   <p className="text-gray-600 dark:text-portfolio-text-muted">Usually within 24 hours</p>
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <p className="text-gray-900 dark:text-portfolio-text font-medium mb-4">Connect with me:</p>
+                <div className="flex gap-4">
+                  <a 
+                    href="https://linkedin.com/in/luke-salamat" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-portfolio-accent/10 p-3 rounded-lg text-portfolio-accent hover:bg-portfolio-accent hover:text-white transition-all duration-300"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a 
+                    href="https://github.com/luke-salamat" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-portfolio-accent/10 p-3 rounded-lg text-portfolio-accent hover:bg-portfolio-accent hover:text-white transition-all duration-300"
+                  >
+                    <Github className="w-5 h-5" />
+                  </a>
                 </div>
               </div>
             </div>
