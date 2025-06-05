@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GraduationCap, Briefcase, Users } from 'lucide-react';
 
@@ -8,8 +7,8 @@ const About = () => {
       icon: <GraduationCap className="w-6 h-6" />,
       title: "BS Information Technology",
       organization: "Xavier University – Ateneo de Cagayan",
-      period: "Aug 2021 – Present",
-      description: "Currently pursuing a Bachelor's degree in Information Technology with a GPA of 3.15. Relevant coursework includes Networking, DBMS, OOP, Software Engineering, Machine Learning, and Data Structures & Algorithms."
+      period: "Aug 2021 – May 2025",
+      description: "Graduated with a Bachelor's degree in Information Technology with a GPA of 3.15. Relevant coursework includes Networking, DBMS, OOP, Software Engineering, Machine Learning, and Data Structures & Algorithms."
     },
     {
       icon: <Briefcase className="w-6 h-6" />,
